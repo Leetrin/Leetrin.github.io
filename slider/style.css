@@ -1,0 +1,72 @@
+.slider {
+  position: relative;
+  height: 500px;
+}
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+.slider .slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .slide .slide-heading,
+.slider .slide .slide-description {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.slider .slide .slide-heading {
+  top: 50px;
+}
+.slider .slide .slide-description {
+  bottom: 50px;
+}
+.slider .slide.active {
+  opacity: 1;
+}
+.slider .prev-btn,
+.slider .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider .prev-btn {
+  left: 20px;
+}
+.slider .next-btn {
+  right: 20px;
+}
+.slider .dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.slider .dots .dot {
+  margin: 0 5px;
+}
+.slider .dots .dot.active {
+  background: black;
+  color: white;
+}
+
+.destroy-btn {
+  display: block;
+  margin: 20px auto 0;
+  background: red;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
