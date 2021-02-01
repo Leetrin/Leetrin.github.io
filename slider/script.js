@@ -129,28 +129,3 @@ class Slider {
     this.container.innerHTML = "";
   }
 }
-
-const images = [
-  {
-    heading: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imgUrl:
-      "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg",
-  },
-  {
-    heading: "Suspendisse ornare felis",
-    description:
-      "Suspendisse ornare felis ut ligula bibendum, at convallis elit varius.",
-    imgUrl:
-      "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg",
-  },
-  {
-    heading: "Donec id interdum",
-    description: "Donec id interdum lacus, ut tempor sapien.",
-    imgUrl:
-      "https://cdn.pixabay.com/photo/2016/01/19/17/41/friends-1149841_960_720.jpg",
-  },
-];
-
-const slider = new Slider(".slider", images);
-slider.init();
